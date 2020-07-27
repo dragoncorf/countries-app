@@ -1,0 +1,84 @@
+html {
+  background-color: rgb(5, 144, 199);
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 249, 249);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px;
+}
+.languages {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.languages:hover {
+  display: inherit;
+}
+.listCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input[type="text"],
+select {
+  padding: 12px 20px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 15px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dbdbdbf8;
+}
+select {
+  width: 155px;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 460px) {
+  .searchBar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 220px) {
+  .card {
+    font-size: small;
+  }
+}
